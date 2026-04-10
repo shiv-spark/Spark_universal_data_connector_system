@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.env/
+virtual_env/
+build/
+dist/
+
+.env
+airflow/.env
+airflow/data/
