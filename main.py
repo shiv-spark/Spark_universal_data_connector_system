@@ -1027,7 +1027,7 @@ def get_pipeline_logs_by_run(pipeline_name: str, dag_run_id: str):
 
 @app.get("/metrics/{pipeline_id}")
 def get_pipeline_metrics(pipeline_id: str, limit: int = 20):
-    """Ek pipeline ki last N runs ki metrics."""
+    """ pipeline  last N runs  metrics."""
     conn = get_conn()
     cur  = conn.cursor()
 
@@ -1060,7 +1060,7 @@ def get_pipeline_metrics(pipeline_id: str, limit: int = 20):
 # aggregated metrics summary for all pipelines
 @app.get("/metrics/summary/all")
 def get_all_metrics_summary():
-    """Saari pipelines ka aggregated summary."""
+    """All pipelines  aggregated summary."""
     conn = get_conn()
     cur  = conn.cursor()
 
